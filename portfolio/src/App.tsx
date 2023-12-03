@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Main from './pages/main';
+import Nav from './components/nav';
 
 function App() {
   return (
-    <div className="App">
-      <h1>안녕하세요</h1>
-    </div>
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/portfolio" element={<Main />} />
+      </Routes>
+    </>
   );
 }
 
