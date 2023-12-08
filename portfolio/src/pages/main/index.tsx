@@ -3,7 +3,7 @@ import {
   StyledMain,
   StyledMainContainer,
 } from './Main.styled';
-import Abountme from './aboutme';
+import Aboutme from './aboutme';
 import Hello from './hello';
 import Skills from './skills';
 
@@ -14,7 +14,7 @@ const Main = () => {
         <StyledHelloContainer>
           <Hello />
         </StyledHelloContainer>
-        <Abountme />
+        <Aboutme />
         <Skills />
       </StyledMainContainer>
     </StyledMain>
