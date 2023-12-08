@@ -1,10 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 
 const StyledHello = styled.div`
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 3rem;
+  margin: 2rem;
+  font-family: ${(props) => props.theme.fonts.semiboldfont};
+  font-size: 28px;
 `;
 
 const typing = keyframes`

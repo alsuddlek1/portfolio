@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledMain = styled.div`
   height: 92vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   overflow-y: scroll;

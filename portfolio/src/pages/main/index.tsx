@@ -1,9 +1,6 @@
-import {
-  StyledHelloContainer,
-  StyledMain,
-  StyledMainContainer,
-} from './Main.styled';
+import { StyledMain, StyledMainContainer } from './Main.styled';
 import Aboutme from './aboutme';
+import Content from './content';
 import Hello from './hello';
 import Skills from './skills';
 
@@ -11,11 +8,10 @@ const Main = () => {
   return (
     <StyledMain>
       <StyledMainContainer>
-        <StyledHelloContainer>
-          <Hello />
-        </StyledHelloContainer>
+        <Hello />
         <Aboutme />
         <Skills />
+        <Content />
       </StyledMainContainer>
     </StyledMain>
   );
