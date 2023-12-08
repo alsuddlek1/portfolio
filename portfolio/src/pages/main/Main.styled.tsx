@@ -9,7 +9,7 @@ const StyledMain = styled.div`
 `;
 
 const StyledMainContainer = styled.div`
-  max-width: 60%;
+  max-width: 55vw;
   height: max-content;
   border: 1px solid gray;
 `;
