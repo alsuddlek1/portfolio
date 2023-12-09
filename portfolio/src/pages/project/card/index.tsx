@@ -21,17 +21,19 @@ const Card = (props: any) => {
         alt="main"
       />
       <StyledCardText id="date">{date}</StyledCardText>
-      <StyledCardBoldText id="title">{name}</StyledCardBoldText>
-      <StyledCardText id="content">{content}</StyledCardText>
-      {skills?.map((skill: any) => (
-        <StyledCardImg
-          src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
-          alt="icon"
-          key={skill.id}
-        />
-      ))}
+      <StyledCardBoldText id="title">
+        {name} | {content}
+      </StyledCardBoldText>
+      <StyledCardRow>
+        {skills?.map((skill: any) => (
+          <StyledCardImg
+            src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
+            alt="icon"
+            key={skill.id}
+          />
+        ))}
+      </StyledCardRow>
 
-      <br />
       <br />
       <StyledCardRow>
         <StyledCardImg

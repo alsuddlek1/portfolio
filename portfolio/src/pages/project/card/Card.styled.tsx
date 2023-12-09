@@ -3,7 +3,12 @@ import styled, { css } from 'styled-components';
 const StyledCard = styled.div`
   border: 1px solid black;
   border-radius: 1rem;
-  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  width: 300px;
 `;
 
 const StyledCardImg = styled.img.attrs<any>(() => ({}))`
@@ -12,16 +17,16 @@ const StyledCardImg = styled.img.attrs<any>(() => ({}))`
     const name: any = {
       main: `
       width: 300px;
+      height : 140px;
       `,
       icon: `
       width:20px;
       height:20px;
-      margin:0px 3px;
+      margin: 0px 0px 0px 10px;
       `,
     };
 
     return css`
-      margin: 5px 0px;
       ${name[alt]}
     `;
   }}
@@ -38,7 +43,7 @@ const StyledCardBoldText = styled.div.attrs<any>(() => ({}))`
 
     return css`
       font-family: ${(props) => props.theme.fonts.semiboldfont};
-      margin: 5px 0px;
+      margin: 10px;
       ${name[id]}
     `;
   }}
@@ -55,7 +60,7 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
 
     return css`
       font-family: ${(props) => props.theme.fonts.regularlfont};
-      margin: 5px 0px;
+      margin: 10px;
       ${name[id]}
     `;
   }}
@@ -63,6 +68,7 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
 
 const StyledCardRow = styled.div`
   display: flex;
+  margin-bottom: 10px;
 `;
 
 export {

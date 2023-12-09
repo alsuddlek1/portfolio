@@ -15,7 +15,7 @@ const Aboutme = () => {
         alt="profile"
       />
       <StyledAboutContents>
-        <StyledAboutText id="title">About Me</StyledAboutText>
+        <StyledAboutText id="title">#1 About Me</StyledAboutText>
         <br />
         <StyledAboutRowDiv>
           <StyledProfileImg

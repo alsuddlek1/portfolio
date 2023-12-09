@@ -5,7 +5,7 @@ const StyledNav = styled.div`
   width: 100%;
   z-index: 100;
   background-color: white;
-  border-bottom: 3px solid #b4b2b2;
+  border-bottom: 1px solid #b4b2b2;
 `;
 
 const StyledNavContainer = styled.div`
@@ -16,14 +16,20 @@ const StyledNavContainer = styled.div`
   margin: auto;
   padding: 0px 8px;
   height: 5rem;
-  max-width: 1000px;
+  max-width: 1200px;
 `;
 
 const StyledNavName = styled.div`
-  font-size: 28px;
+  font-size: 18px;
   font-family: ${(props) => props.theme.fonts.semiboldfont};
   display: flex;
   align-items: center;
+  color: black;
+`;
+
+const StyledLogo = styled.img`
+  width: 25px;
+  margin-right: 10px;
 `;
 
 const StyledNavButtonContainer = styled.div`
@@ -31,7 +37,7 @@ const StyledNavButtonContainer = styled.div`
 `;
 
 const StyledNavButton = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   font-family: ${(props) => props.theme.fonts.semiboldfont};
   display: flex;
   align-items: center;
@@ -40,6 +46,7 @@ const StyledNavButton = styled.div`
 
 export {
   StyledNav,
+  StyledLogo,
   StyledNavName,
   StyledNavButton,
   StyledNavContainer,

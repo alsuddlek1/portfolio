@@ -5,7 +5,7 @@ const StyledProject = styled.div`
   height: 92vh;
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
+  overflow: scroll;
 `;
 
 const StyledProjectContainer = styled.div`

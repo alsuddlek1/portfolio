@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import {
+  StyledLogo,
   StyledNav,
   StyledNavButton,
   StyledNavButtonContainer,
@@ -19,7 +20,12 @@ const Nav = () => {
   return (
     <StyledNav>
       <StyledNavContainer>
-        <StyledNavName>Min-Young</StyledNavName>
+        <StyledNavButtonContainer>
+          <StyledLogo src={process.env.PUBLIC_URL + '/logo.svg'} />
+          <StyledNavName>
+            FrontEnd-Developer Min-young's Portfolio
+          </StyledNavName>
+        </StyledNavButtonContainer>
 
         <StyledNavButtonContainer>
           <StyledNavButton onClick={goMain}>{'<Minyoung />'}</StyledNavButton>
