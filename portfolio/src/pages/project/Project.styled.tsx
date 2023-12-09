@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledProject = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 92vh;
   display: flex;
   justify-content: center;
@@ -9,10 +9,10 @@ const StyledProject = styled.div`
 `;
 
 const StyledProjectContainer = styled.div`
-  max-width: 55vw;
-  width: 55vw;
+  max-width: 1000px;
   height: max-content;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  padding: 0rem 1rem;
 `;
 
 const StyledProjectTitle = styled.div`
@@ -22,33 +22,17 @@ const StyledProjectTitle = styled.div`
   margin-top: 2rem;
 `;
 
-const StyledProjectCardContainer = styled.div`
-  border: 1px solid blue;
+const StyledProjectBox = styled.div`
+  /* border: 1px solid green; */
+  margin: 5rem 0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 3rem;
-`;
-
-const StyledProjectCard = styled.div`
-  border: 1px solid pink;
-`;
-
-const StyledProjectCardImg = styled.div`
-  background-color: aliceblue;
-  height: 100px;
-`;
-
-const StyledProjectCardText = styled.div`
-  border: 1px solid black;
 `;
 
 export {
   StyledProject,
   StyledProjectContainer,
-  StyledProjectCardContainer,
   StyledProjectTitle,
-  StyledProjectCard,
-  StyledProjectCardImg,
-  StyledProjectCardText,
+  StyledProjectBox,
 };

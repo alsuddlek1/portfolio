@@ -38,7 +38,7 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
 `;
 
 const StyledAboutContents = styled.div`
-  width: 35rem;
+  width: 300px;
 `;
 
 const StyledAboutRowDiv = styled.div`
