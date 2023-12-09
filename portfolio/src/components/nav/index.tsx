@@ -3,6 +3,7 @@ import {
   StyledNav,
   StyledNavButton,
   StyledNavButtonContainer,
+  StyledNavContainer,
   StyledNavName,
 } from './Nav.styeld';
 
@@ -17,12 +18,14 @@ const Nav = () => {
   };
   return (
     <StyledNav>
-      <StyledNavName>Min-Young</StyledNavName>
+      <StyledNavContainer>
+        <StyledNavName>Min-Young</StyledNavName>
 
-      <StyledNavButtonContainer>
-        <StyledNavButton onClick={goMain}>{'<Minyoung />'}</StyledNavButton>
-        <StyledNavButton onClick={goProject}>{'<Project />'}</StyledNavButton>
-      </StyledNavButtonContainer>
+        <StyledNavButtonContainer>
+          <StyledNavButton onClick={goMain}>{'<Minyoung />'}</StyledNavButton>
+          <StyledNavButton onClick={goProject}>{'<Project />'}</StyledNavButton>
+        </StyledNavButtonContainer>
+      </StyledNavContainer>
     </StyledNav>
   );
 };
