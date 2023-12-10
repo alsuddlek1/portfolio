@@ -15,8 +15,7 @@ const Aboutme = () => {
         alt="profile"
       />
       <StyledAboutContents>
-        <StyledAboutText id="title">#1 About Me</StyledAboutText>
-        <br />
+        {/* <StyledAboutText id="title">#1 About Me</StyledAboutText> */}
         <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/profile.png'}

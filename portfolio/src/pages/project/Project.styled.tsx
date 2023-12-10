@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledProject = styled.div`
   /* border: 1px solid red; */
-  height: 92vh;
+  height: 100vh;
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   overflow: scroll;
@@ -15,16 +16,33 @@ const StyledProjectContainer = styled.div`
   padding: 0rem 1rem;
 `;
 
-const StyledProjectTitle = styled.div`
-  font-family: ${(props) => props.theme.fonts.semiboldfont};
-  font-size: 28px;
-  text-align: center;
-  margin-top: 2rem;
+const StyledProjectTitle = styled.div.attrs<any>(() => ({}))`
+  ${(props) => {
+    const id = props.id;
+    const name: any = {
+      title: `
+      font-size: 28px;
+      margin-top: 2rem;
+      `,
+    };
+
+    return css`
+      font-family: ${(props) => props.theme.fonts.semiboldfont};
+      text-align: center;
+      ${name[id]}
+    `;
+  }}
 `;
+// const StyledProjectTitle = styled.div`
+//   font-family: ${(props) => props.theme.fonts.semiboldfont};
+//   font-size: 28px;
+//   text-align: center;
+//   margin-top: 2rem;
+// `;
 
 const StyledProjectBox = styled.div`
   /* border: 1px solid green; */
-  margin: 5rem 0rem;
+  margin: 3rem 0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;

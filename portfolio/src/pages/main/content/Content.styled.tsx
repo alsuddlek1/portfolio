@@ -2,25 +2,37 @@ import styled, { css } from 'styled-components';
 
 const StyledContent = styled.div`
   /* border: 1px solid blue; */
-  margin: 2rem;
+  margin: 2rem 0rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem 4rem;
+  font-family: ${(props) => props.theme.fonts.regularfont};
 `;
 
-const StyledContentContainer = styled.div`
-  /* border: 1px solid red; */
-  height: 10rem;
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 10px;
-  margin-left: 20px;
+const StyledContentContainer = styled.div.attrs<any>(() => ({}))`
+  ${(props) => {
+    const id = props.id;
+    const text: any = {
+      experience: `
+        grid-template-columns: 40px 1fr;
+      `,
+      education: `
+        grid-template-columns: 80px 1fr;
+      `,
+    };
+
+    return css`
+      height: 10rem;
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 10px;
+      margin-left: 20px;
+      ${text[id]}
+    `;
+  }}
 `;
 
-const StyledContentBox = styled.div`
-  /* border: 1px solid green; */
-  /* height: 10rem; */
-`;
+const StyledContentBox = styled.div``;
 
 const StyledContentBoldText = styled.div.attrs<any>(() => ({}))`
   ${(props) => {

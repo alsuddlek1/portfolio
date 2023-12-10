@@ -3,13 +3,10 @@ import styled, { keyframes } from 'styled-components';
 const StyledHello = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   line-height: 1.5;
-  padding: 3rem;
-  margin: 2rem;
+  margin: 3rem 0px 0px 0rem;
   font-family: ${(props) => props.theme.fonts.semiboldfont};
-  font-size: 28px;
+  font-size: 24px;
 `;
 
 const typing = keyframes`

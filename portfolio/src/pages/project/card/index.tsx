@@ -15,24 +15,25 @@ const Card = (props: any) => {
   const imgUrl = props.ImgSrc;
   console.log(skills);
   return (
-    <StyledCard id={name}>
+    <StyledCard id="card">
       <StyledCardImg
         src={process.env.PUBLIC_URL + '/project' + imgUrl}
         alt="main"
       />
-      <StyledCardText id="date">{date}</StyledCardText>
-      <StyledCardBoldText id="title">
-        {name} | {content}
-      </StyledCardBoldText>
-      <StyledCardRow>
-        {skills?.map((skill: any) => (
-          <StyledCardImg
-            src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
-            alt="icon"
-            key={skill.id}
-          />
-        ))}
-      </StyledCardRow>
+      <StyledCard id="box">
+        <StyledCardBoldText id="title">{name}</StyledCardBoldText>
+        <StyledCardText id="content">{content}</StyledCardText>
+        <StyledCardText id="date">{date}</StyledCardText>
+        {/* <StyledCardRow>
+          {skills?.map((skill: any) => (
+            <StyledCardImg
+              src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
+              alt="icon"
+              key={skill.id}
+            />
+          ))}
+        </StyledCardRow> */}
+      </StyledCard>
 
       {/* <StyledCardRow>
         <StyledCardImg

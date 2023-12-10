@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledNav = styled.div`
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 100;
   background-color: white;
@@ -25,11 +25,13 @@ const StyledNavName = styled.div`
   display: flex;
   align-items: center;
   color: black;
+  cursor: pointer;
 `;
 
 const StyledLogo = styled.img`
   width: 25px;
   margin-right: 10px;
+  cursor: pointer;
 `;
 
 const StyledNavButtonContainer = styled.div`
@@ -42,6 +44,7 @@ const StyledNavButton = styled.div`
   display: flex;
   align-items: center;
   margin: 0rem 1rem;
+  cursor: pointer;
 `;
 
 export {

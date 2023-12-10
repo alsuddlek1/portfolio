@@ -1,14 +1,28 @@
 import styled, { css } from 'styled-components';
 
-const StyledCard = styled.div`
-  border: 1px solid black;
-  border-radius: 1rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  width: 300px;
+const StyledCard = styled.div.attrs<any>(() => ({}))`
+  ${(props) => {
+    const id = props.id;
+    const name: any = {
+      box: `
+      padding : 10px;
+      `,
+      card: `
+      border: 1px solid gray;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      `,
+    };
+
+    return css`
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-between; */
+      cursor: default;
+      ${name[id]}
+    `;
+  }}
 `;
 
 const StyledCardImg = styled.img.attrs<any>(() => ({}))`
@@ -38,12 +52,12 @@ const StyledCardBoldText = styled.div.attrs<any>(() => ({}))`
     const name: any = {
       title: `
         font-size : 18px;
+        margin-bottom : 5px;
         `,
     };
 
     return css`
       font-family: ${(props) => props.theme.fonts.semiboldfont};
-      margin: 10px;
       ${name[id]}
     `;
   }}
@@ -54,13 +68,18 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
     const id = props.id;
     const name: any = {
       date: `
-        color : gray
+        color : gray;
+        font-size : 14px;
         `,
+      content: `
+        color : gray;
+        font-size : 14px;
+        margin-bottom : 5px;
+      `,
     };
 
     return css`
       font-family: ${(props) => props.theme.fonts.regularlfont};
-      margin: 10px;
       ${name[id]}
     `;
   }}

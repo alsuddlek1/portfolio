@@ -2,12 +2,10 @@ import styled, { css } from 'styled-components';
 
 const StyledAboutme = styled.div`
   /* border: 1px solid red; */
-  margin: 2rem;
+  margin: 3rem 0rem;
   display: flex;
-  padding: 3rem;
   font-family: ${(props) => props.theme.fonts.regularfont};
   line-height: 150%;
-  font-size: regular;
 `;
 
 const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
@@ -15,9 +13,9 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
     const alt = props.alt;
     const name: any = {
       profile: `
-      width: 300px;
+      width: 250px;
       margin-right: 2rem;
-      border-radius: 1rem;
+      border-radius: 10px;
       `,
       icon: `
       width:20px;
@@ -39,11 +37,13 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
 
 const StyledAboutContents = styled.div`
   width: 300px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const StyledAboutRowDiv = styled.div`
   display: flex;
-  margin: 10px 0px;
+  margin: 5px 0px;
   font-family: ${(props) => props.theme.fonts.regularfont};
 `;
 
