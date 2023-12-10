@@ -38,7 +38,7 @@ const Project = () => {
           />
           <Card
             ProjectName="🎥 WWM(Weather With Movie)"
-            Date="23.10.09 - 23.11.17 (2명)"
+            Date="23.05.22 - 23.05.31 (2명)"
             Skills={['django', 'sqlite']}
             Position={['발표', 'BE', '기획']}
             Content="날씨기반 영화 추천 웹 서비스"
