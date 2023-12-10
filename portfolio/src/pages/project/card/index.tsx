@@ -34,14 +34,13 @@ const Card = (props: any) => {
         ))}
       </StyledCardRow>
 
-      <br />
-      <StyledCardRow>
+      {/* <StyledCardRow>
         <StyledCardImg
           src={process.env.PUBLIC_URL + '/icon/github.png'}
           alt="icon"
         />
-        | GitHub
-      </StyledCardRow>
+        GitHub
+      </StyledCardRow> */}
     </StyledCard>
   );
 };
