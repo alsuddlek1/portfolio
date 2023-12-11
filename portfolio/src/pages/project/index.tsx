@@ -12,7 +12,7 @@ const Project = () => {
       <StyledProjectContainer>
         <StyledProjectTitle id="title">Projects</StyledProjectTitle>
         <StyledProjectTitle>
-          진행한 프로젝트와 상세정보를 확인해보세요!
+          진행한 프로젝트 및 상세정보를 확인해보세요!
         </StyledProjectTitle>
         <StyledProjectBox>
           <Card
@@ -41,18 +41,18 @@ const Project = () => {
           />
           <Card
             ProjectName="🎥 WWM(Weather With Movie)"
-            Date="23.05.22 - 23.05.31 | 2명"
+            Date="23.05.22 - 23.05.31 | 2명(BE)"
             Skills={['django', 'sqlite']}
             Position={['발표', 'BE', '기획']}
-            Content="날씨기반 영화 추천 웹 서비스"
+            Content="날씨기반 영화 추천 및 다양한 영화 컨텐츠 제공 웹 서비스"
             ImgSrc="/wwm.png"
           />
           <Card
             ProjectName="Min-Young"
-            Date="23.12.01 - 진행중 | 1명"
+            Date="23.12.01 - 23.12.15 | 1명"
             Skills={['react', 'typescript', 'styledcomponents']}
             Position={['FE', '기획']}
-            Content="포트폴리오 웹/모바일 프로젝트"
+            Content="포트폴리오 개인 프로젝트"
             ImgSrc="/portfolio.png"
           />
         </StyledProjectBox>

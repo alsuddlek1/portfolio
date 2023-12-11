@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 const StyledCard = styled.div.attrs<any>(() => ({}))`
   ${(props) => {
@@ -6,12 +6,15 @@ const StyledCard = styled.div.attrs<any>(() => ({}))`
     const name: any = {
       box: `
       padding : 10px;
+      border-radius: 0px 0px 5px 5px;
+      border: 2px solid gray;
+      border-top : none;
+      height : 130px
       `,
       card: `
-      border: 1px solid gray;
-      border-radius: 10px;
+      border-radius: 5px;
       overflow: hidden;
-      width: 300px;
+      width: 250px;
       `,
     };
 
@@ -30,13 +33,13 @@ const StyledCardImg = styled.img.attrs<any>(() => ({}))`
     const alt = props.alt;
     const name: any = {
       main: `
-      width: 300px;
       height : 140px;
+      object-fit:cover;
       `,
       icon: `
       width:20px;
       height:20px;
-      margin: 0px 0px 0px 10px;
+      margin: 5px 10px 0px 0px;
       `,
     };
 
@@ -46,6 +49,15 @@ const StyledCardImg = styled.img.attrs<any>(() => ({}))`
   }}
 `;
 
+const scrollLeft = keyframes`
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
 const StyledCardBoldText = styled.div.attrs<any>(() => ({}))`
   ${(props) => {
     const id = props.id;
@@ -53,11 +65,16 @@ const StyledCardBoldText = styled.div.attrs<any>(() => ({}))`
       title: `
         font-size : 18px;
         margin-bottom : 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         `,
     };
 
     return css`
       font-family: ${(props) => props.theme.fonts.semiboldfont};
+
       ${name[id]}
     `;
   }}
@@ -74,7 +91,8 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
       content: `
         color : gray;
         font-size : 14px;
-        margin-bottom : 5px;
+        margin : 5px 0px;
+        height : 40px;
       `,
     };
 
