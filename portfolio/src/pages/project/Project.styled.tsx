@@ -6,7 +6,7 @@ const StyledProject = styled.div`
   padding-top: 5rem;
   display: flex;
   justify-content: center;
-  overflow: scroll;
+  overflow-y: scroll;
 `;
 
 const StyledProjectContainer = styled.div`
@@ -33,18 +33,12 @@ const StyledProjectTitle = styled.div.attrs<any>(() => ({}))`
     `;
   }}
 `;
-// const StyledProjectTitle = styled.div`
-//   font-family: ${(props) => props.theme.fonts.semiboldfont};
-//   font-size: 28px;
-//   text-align: center;
-//   margin-top: 2rem;
-// `;
 
 const StyledProjectBox = styled.div`
   /* border: 1px solid green; */
   margin: 3rem 0rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 `;
 
