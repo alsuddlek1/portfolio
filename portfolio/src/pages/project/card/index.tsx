@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   StyledCard,
   StyledCardBoldText,
@@ -7,6 +8,7 @@ import {
   StyledCardRow,
   StyledCardText,
 } from './Card.styled';
+import Detail from '../detail';
 
 const Card = (props: any) => {
   const name = props.ProjectName;
@@ -15,9 +17,19 @@ const Card = (props: any) => {
   const position = props.Position;
   const content = props.Content;
   const imgUrl = props.ImgSrc;
-  console.log(skills);
+
+  const [isDetailOpen, setIsDetailOpen] = useState(false);
+  const openDetail = () => {
+    setIsDetailOpen(!isDetailOpen);
+    console.log(isDetailOpen);
+  };
+
+  const closeDetail = () => {
+    setIsDetailOpen(!isDetailOpen);
+    console.log('close');
+  };
   return (
-    <StyledCard id="card">
+    <StyledCard id="card" onClick={openDetail}>
       <StyledCardImg
         src={process.env.PUBLIC_URL + '/project' + imgUrl}
         alt="main"
@@ -28,7 +40,7 @@ const Card = (props: any) => {
             <StyledCardBoldText id="title">{name}</StyledCardBoldText>
             <StyledCardText id="date">{date}</StyledCardText>
             <StyledCardText id="content">{content}</StyledCardText>
-            {/* <StyledCardRow>
+            <StyledCardRow>
               {skills?.map((skill: any) => (
                 <StyledCardImg
                   src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
@@ -36,18 +48,29 @@ const Card = (props: any) => {
                   key={skill.id}
                 />
               ))}
-            </StyledCardRow> */}
+            </StyledCardRow>
+            <StyledCardRow>
+              <StyledCardImg
+                src={process.env.PUBLIC_URL + '/icon/github.png'}
+                alt="icon"
+              />
+              GitHub
+            </StyledCardRow>
           </StyledCard>
         </StyledCardFigcaptionBox>
       </StyledCardFigcaption>
-
-      {/* <StyledCardRow>
-        <StyledCardImg
-          src={process.env.PUBLIC_URL + '/icon/github.png'}
-          alt="icon"
+      {isDetailOpen && (
+        <Detail
+          isDetailOpen={isDetailOpen}
+          closeDetail={closeDetail}
+          ProjectName={name}
+          Date={date}
+          Skills={skills}
+          Position={position}
+          Content={content}
+          ImgSrc={imgUrl}
         />
-        GitHub
-      </StyledCardRow> */}
+      )}
     </StyledCard>
   );
 };

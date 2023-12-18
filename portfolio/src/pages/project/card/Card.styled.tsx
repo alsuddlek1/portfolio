@@ -6,7 +6,7 @@ const StyledCard = styled.div.attrs<any>(() => ({}))`
     const name: any = {
       box: `
       padding : 15px;
-      height : 130px
+      // height : 130px
       `,
       card: `
       border-radius: 5px;
@@ -125,7 +125,8 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
 
 const StyledCardRow = styled.div`
   display: flex;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  color: white;
 `;
 
 export {
