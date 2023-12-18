@@ -1,3 +1,4 @@
+import { ProjectData } from '../../../data/project';
 import {
   StyledDetail,
   StyledDetailBoldText,
@@ -9,12 +10,14 @@ import {
 } from './Detail.styled';
 
 const Detail = (props: any) => {
-  const name = props.ProjectName;
-  const date = props.Date;
-  const skills = props.Skills;
-  const position = props.Position;
-  const content = props.Content;
-  const imgUrl = props.ImgSrc;
+  const title = props.title;
+  const date = props.date;
+  const skills = props.skills;
+  const position = props.position;
+  const content = props.content;
+  const imgsrc = props.imgsrc;
+
+  console.log(ProjectData[0]);
   return (
     <StyledDetail onClick={props.closeModal}>
       <StyledDetailWindow onClick={(e: any) => e.stopPropagation()}>
@@ -25,7 +28,7 @@ const Detail = (props: any) => {
           />
           <br />
           <br />
-          <StyledDetailBoldText id="titlie">{name}</StyledDetailBoldText>
+          <StyledDetailBoldText id="titlie">{title}</StyledDetailBoldText>
           <StyledDetailCategoryGrid>
             <StyledDetailText id="category">기간</StyledDetailText>
             <StyledDetailText id="content">{date}</StyledDetailText>
@@ -37,7 +40,7 @@ const Detail = (props: any) => {
             <StyledDetailText id="content">{position}</StyledDetailText>
           </StyledDetailCategoryGrid>
           <StyledDetailImg
-            src={process.env.PUBLIC_URL + '/project' + imgUrl}
+            src={process.env.PUBLIC_URL + '/project' + imgsrc}
             alt="propjectMain"
           />
         </StyledDetailLayout>

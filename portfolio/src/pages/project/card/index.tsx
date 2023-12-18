@@ -11,12 +11,12 @@ import {
 import Detail from '../detail';
 
 const Card = (props: any) => {
-  const name = props.ProjectName;
-  const date = props.Date;
-  const skills = props.Skills;
-  const position = props.Position;
-  const content = props.Content;
-  const imgUrl = props.ImgSrc;
+  const title = props.key;
+  const date = props.date;
+  const skills = props.skills;
+  const position = props.position;
+  const content = props.content;
+  const imgsrc = props.imgsrc;
 
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const openDetail = () => {
@@ -31,13 +31,13 @@ const Card = (props: any) => {
   return (
     <StyledCard id="card" onClick={openDetail}>
       <StyledCardImg
-        src={process.env.PUBLIC_URL + '/project' + imgUrl}
+        src={process.env.PUBLIC_URL + '/project' + imgsrc}
         alt="main"
       />
       <StyledCardFigcaption>
         <StyledCardFigcaptionBox>
           <StyledCard id="box">
-            <StyledCardBoldText id="title">{name}</StyledCardBoldText>
+            <StyledCardBoldText id="title">{title}</StyledCardBoldText>
             <StyledCardText id="date">{date}</StyledCardText>
             <StyledCardText id="content">{content}</StyledCardText>
             <StyledCardRow>
@@ -63,12 +63,12 @@ const Card = (props: any) => {
         <Detail
           isDetailOpen={isDetailOpen}
           closeDetail={closeDetail}
-          ProjectName={name}
-          Date={date}
-          Skills={skills}
-          Position={position}
-          Content={content}
-          ImgSrc={imgUrl}
+          title={title}
+          date={date}
+          skills={skills}
+          position={position}
+          content={content}
+          imgsrc={imgsrc}
         />
       )}
     </StyledCard>

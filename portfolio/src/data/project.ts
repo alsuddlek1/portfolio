@@ -1,0 +1,48 @@
+export const ProjectData = [
+  {
+    id: 1,
+
+    title: '🥇 Next Level',
+    date: '23.10.09 - 23.11.17 | 6명',
+    skills: ['react', 'typescript', 'zustand', 'styledcomponents'],
+    position: ['팀장', '발표', 'FE', '기획'],
+    content: 'K-콘텐츠를 통한 실전 한국어 표현 체험형 플랫폼 ',
+    imgsrc: '/nextlevel.gif',
+  },
+  {
+    id: 2,
+    title: '⚾ LA:ON',
+    date: '23.06.26 - 23.08.18 | 6명',
+    skills: ['react', 'javascript', 'redux'],
+    position: ['발표', 'FE', '기획'],
+    content: '삼성 라이온즈 파크 방문객들을 위한 서비스',
+    imgsrc: '/laon.png',
+  },
+  {
+    id: 3,
+    title: '🦕 와이라노사우루스',
+    date: '23.08.14 - 23.10.6 | 6명',
+    skills: ['react', 'typescript', 'zustand', 'styledcomponents'],
+    position: ['발표', 'FE', '기획'],
+    content: '세계 공룡정보와 공룡엑스포 및 고성 관광정보 제공',
+    imgsrc: '/whyranosaurs.gif',
+  },
+  {
+    id: 4,
+    title: '🎥 WWM(Weather With Movie)',
+    date: '23.05.22 - 23.05.31 | 2명',
+    skills: ['django', 'sqlite'],
+    position: ['발표', 'BE', '기획'],
+    content: '날씨기반 영화 추천 및 다양한 영화 컨텐츠 제공 웹 서비스',
+    imgsrc: '/wwm.png',
+  },
+  {
+    id: 5,
+    title: 'Min-Young',
+    date: '23.12.01 - 23.12.15 | 1명',
+    skills: ['react', 'typescript', 'styledcomponents'],
+    position: ['FE', '기획'],
+    content: '포트폴리오 개인 프로젝트',
+    imgsrc: '/portfolio.png',
+  },
+];
