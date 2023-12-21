@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ProjectData } from '../../../data/project';
 import {
   StyledDetail,
@@ -10,39 +11,54 @@ import {
 } from './Detail.styled';
 
 const Detail = (props: any) => {
-  const title = props.title;
-  const date = props.date;
-  const skills = props.skills;
-  const position = props.position;
-  const content = props.content;
-  const imgsrc = props.imgsrc;
+  const id = props.id - 1;
+  const data = ProjectData[id];
 
-  console.log(ProjectData[0]);
   return (
     <StyledDetail onClick={props.closeModal}>
       <StyledDetailWindow onClick={(e: any) => e.stopPropagation()}>
         <StyledDetailLayout>
-          <StyledDetailImg
+          {/* <StyledDetailImg
             src={process.env.PUBLIC_URL + '/icon/birthday.png'}
             alt="projectlogo"
-          />
+          /> */}
+          <StyledDetailBoldText>
+            {data.contents?.ttitleIcon}
+          </StyledDetailBoldText>
           <br />
-          <br />
-          <StyledDetailBoldText id="titlie">{title}</StyledDetailBoldText>
+          <StyledDetailBoldText id="titlie">{data.title}</StyledDetailBoldText>
           <StyledDetailCategoryGrid>
             <StyledDetailText id="category">기간</StyledDetailText>
-            <StyledDetailText id="content">{date}</StyledDetailText>
+            <StyledDetailText id="content">
+              {data.contents?.date}
+            </StyledDetailText>
+            <StyledDetailText id="category">인원</StyledDetailText>
+            <StyledDetailText id="content">
+              {data.contents?.member}
+            </StyledDetailText>
             <StyledDetailText id="category">프로젝트 개요</StyledDetailText>
-            <StyledDetailText id="content">{content}</StyledDetailText>
+            <StyledDetailText id="content">{data.content}</StyledDetailText>
             <StyledDetailText id="category">기술스택</StyledDetailText>
-            <StyledDetailText id="content">{skills}</StyledDetailText>
+            <StyledDetailText id="content">
+              {data.contents?.skills}
+            </StyledDetailText>
             <StyledDetailText id="category">담당역할</StyledDetailText>
-            <StyledDetailText id="content">{position}</StyledDetailText>
+            <StyledDetailText id="content">
+              {data.contents?.position}
+            </StyledDetailText>
           </StyledDetailCategoryGrid>
           <StyledDetailImg
-            src={process.env.PUBLIC_URL + '/project' + imgsrc}
+            src={process.env.PUBLIC_URL + '/project' + data.imgsrc}
             alt="propjectMain"
           />
+          <StyledDetailText id="content">
+            {data.contents?.content}
+          </StyledDetailText>
+
+          <StyledDetailText id="category">팀장</StyledDetailText>
+          <StyledDetailText id="content">
+            {data.contents?.charge.leader}
+          </StyledDetailText>
         </StyledDetailLayout>
       </StyledDetailWindow>
     </StyledDetail>

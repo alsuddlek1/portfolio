@@ -11,23 +11,23 @@ import {
 import Detail from '../detail';
 
 const Card = (props: any) => {
-  const title = props.key;
+  const id = props.id;
+  const title = props.title;
   const date = props.date;
   const skills = props.skills;
-  const position = props.position;
   const content = props.content;
   const imgsrc = props.imgsrc;
 
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const openDetail = () => {
     setIsDetailOpen(!isDetailOpen);
-    console.log(isDetailOpen);
   };
 
   const closeDetail = () => {
     setIsDetailOpen(!isDetailOpen);
     console.log('close');
   };
+
   return (
     <StyledCard id="card" onClick={openDetail}>
       <StyledCardImg
@@ -45,7 +45,7 @@ const Card = (props: any) => {
                 <StyledCardImg
                   src={process.env.PUBLIC_URL + '/skills/' + skill + '.png'}
                   alt="icon"
-                  key={skill.id}
+                  key={skill}
                 />
               ))}
             </StyledCardRow>
@@ -60,16 +60,7 @@ const Card = (props: any) => {
         </StyledCardFigcaptionBox>
       </StyledCardFigcaption>
       {isDetailOpen && (
-        <Detail
-          isDetailOpen={isDetailOpen}
-          closeDetail={closeDetail}
-          title={title}
-          date={date}
-          skills={skills}
-          position={position}
-          content={content}
-          imgsrc={imgsrc}
-        />
+        <Detail isDetailOpen={isDetailOpen} closeDetail={closeDetail} id={id} />
       )}
     </StyledCard>
   );

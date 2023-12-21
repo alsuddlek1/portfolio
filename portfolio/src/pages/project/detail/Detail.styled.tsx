@@ -30,6 +30,7 @@ const StyledDetailWindow = styled.div`
   height: calc(100% - 144px);
   max-width: 970px;
   border-radius: 4px;
+  overflow-y: scroll;
 `;
 
 const StyledDetailLayout = styled.div`

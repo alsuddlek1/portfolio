@@ -18,7 +18,9 @@ const Project = () => {
         <StyledProjectBox>
           {ProjectData?.map((project: any) => (
             <Card
-              key={project.title}
+              key={project.id}
+              id={project.id}
+              title={project.title}
               date={project.date}
               skills={project.skills}
               position={project.position}
