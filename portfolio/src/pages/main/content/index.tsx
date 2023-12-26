@@ -22,13 +22,13 @@ const Content = () => {
             21.03 <br />
             &nbsp;&nbsp;&nbsp;- 23.02
           </StyledContentBoldText>
-          <StyledText id="content">창원대학교 수학과</StyledText>
+          <StyledText id="content">00대학교 수학과</StyledText>
           <StyledContentBoldText>
             19.03
             <br />
             &nbsp;&nbsp;&nbsp;- 21.02
           </StyledContentBoldText>
-          <StyledText id="content">대구대학교 수학과/통계학과</StyledText>
+          <StyledText id="content">00대학교 수학과/통계학과</StyledText>
         </StyledContentContainer>
       </StyledContentBox>
 

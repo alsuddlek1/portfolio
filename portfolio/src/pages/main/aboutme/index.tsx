@@ -28,7 +28,7 @@ const Aboutme = () => {
             src={process.env.PUBLIC_URL + '/icon/birthday.png'}
             alt="icon"
           />
-          <StyledAboutText>1999.03.11</StyledAboutText>
+          <StyledAboutText>0000.03.11</StyledAboutText>
         </StyledAboutRowDiv>
         <StyledAboutRowDiv>
           <StyledProfileImg
@@ -42,7 +42,7 @@ const Aboutme = () => {
             src={process.env.PUBLIC_URL + '/icon/school.png'}
             alt="icon"
           />
-          <StyledAboutText>창원대학교 수학과 졸업</StyledAboutText>
+          <StyledAboutText>00대학교 수학과 졸업</StyledAboutText>
         </StyledAboutRowDiv>
         <StyledAboutRowDiv>
           <StyledProfileImg

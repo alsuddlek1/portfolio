@@ -15,7 +15,7 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
       profile: `
       width: 250px;
       margin-right: 2rem;
-      border-radius: 10px;
+      border-radius: 5px;
       `,
       icon: `
       width:20px;
@@ -39,6 +39,7 @@ const StyledAboutContents = styled.div`
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 `;
 
 const StyledAboutRowDiv = styled.div`

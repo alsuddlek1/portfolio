@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const StyledMain = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 5rem;
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
   cursor: default;
+  /* overflow-y: scroll; */
 `;
 
 const StyledMainContainer = styled.div`

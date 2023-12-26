@@ -29,7 +29,8 @@ const Card = (props: any) => {
   };
 
   return (
-    <StyledCard id="card" onClick={openDetail}>
+    // <StyledCard id="card" onClick={openDetail}>
+    <StyledCard id="card">
       <StyledCardImg
         src={process.env.PUBLIC_URL + '/project' + imgsrc}
         alt="main"

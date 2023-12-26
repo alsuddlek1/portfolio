@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 
 const StyledProject = styled.div`
-  /* border: 1px solid red; */
-  height: 100vh;
   padding-top: 5rem;
   display: flex;
   justify-content: center;
@@ -12,7 +10,6 @@ const StyledProject = styled.div`
 const StyledProjectContainer = styled.div`
   max-width: 1000px;
   height: max-content;
-  /* border: 1px solid gray; */
   padding: 0rem 1rem;
 `;
 

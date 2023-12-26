@@ -22,9 +22,7 @@ const Nav = () => {
       <StyledNavContainer>
         <StyledNavButtonContainer onClick={goMain}>
           <StyledLogo src={process.env.PUBLIC_URL + '/logo.svg'} />
-          <StyledNavName>
-            FrontEnd-Developer Min-young's Portfolio
-          </StyledNavName>
+          <StyledNavName>Minyoung's Portfolio</StyledNavName>
         </StyledNavButtonContainer>
 
         <StyledNavButtonContainer>
