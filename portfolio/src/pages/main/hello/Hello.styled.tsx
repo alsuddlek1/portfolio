@@ -7,6 +7,7 @@ const StyledHello = styled.div`
   margin: 3rem 0px 0px 0rem;
   font-family: ${(props) => props.theme.fonts.semiboldfont};
   font-size: 24px;
+  align-items: center;
 `;
 
 const typing = keyframes`

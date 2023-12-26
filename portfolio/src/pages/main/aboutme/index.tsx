@@ -1,5 +1,6 @@
 import {
   StyledAboutAtag,
+  StyledAboutBoldText,
   StyledAboutContents,
   StyledAboutRowDiv,
   StyledAboutText,
@@ -15,7 +16,11 @@ const Aboutme = () => {
         alt="profile"
       />
       <StyledAboutContents>
-        {/* <StyledAboutText id="title">#1 About Me</StyledAboutText> */}
+        <StyledAboutBoldText id="title">About Me</StyledAboutBoldText>
+        <StyledAboutText id="aboutme">
+          커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 프론트엔드 개발자
+          손민영입니다.
+        </StyledAboutText>
         <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/profile.png'}

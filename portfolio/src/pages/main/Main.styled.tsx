@@ -1,18 +1,18 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const StyledMain = styled.div`
+const StyledMain = styled(motion.div)`
   /* height: 100vh; */
   padding-top: 5rem;
   display: flex;
   justify-content: center;
   cursor: default;
-  /* overflow-y: scroll; */
+  margin-bottom: 5rem;
 `;
 
 const StyledMainContainer = styled.div`
   max-width: 800px;
   height: max-content;
-  /* border: 1px solid gray; */
 `;
 
 const StyledHelloContainer = styled.div`

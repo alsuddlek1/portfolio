@@ -16,6 +16,8 @@ const StyledFooterText = styled.div`
   display: flex;
   a {
     margin: 0px 20px 5px 20px;
+    color: black;
+    text-decoration: none;
   }
 `;
 

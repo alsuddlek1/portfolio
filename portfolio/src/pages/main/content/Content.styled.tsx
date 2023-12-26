@@ -22,10 +22,9 @@ const StyledContentContainer = styled.div.attrs<any>(() => ({}))`
     };
 
     return css`
-      height: 10rem;
       display: grid;
       grid-template-columns: 60px 1fr;
-      gap: 10px;
+      gap: 30px 10px;
       margin-left: 20px;
       ${text[id]}
     `;
@@ -47,6 +46,8 @@ const StyledContentBoldText = styled.div.attrs<any>(() => ({}))`
     return css`
       font-size: 16px;
       font-family: ${(props) => props.theme.fonts.semiboldfont};
+      display: flex;
+      align-items: center;
       ${text[id]}
     `;
   }}
@@ -66,6 +67,8 @@ const StyledText = styled.div.attrs<any>(() => ({}))`
 
     return css`
       font-size: 16px;
+      display: flex;
+      align-items: center;
       ${text[id]}
     `;
   }}

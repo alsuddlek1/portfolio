@@ -9,7 +9,7 @@ import Card from './card';
 
 const Project = () => {
   return (
-    <StyledProject>
+    <StyledProject initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <StyledProjectContainer>
         <StyledProjectTitle id="title">Projects</StyledProjectTitle>
         <StyledProjectTitle>

@@ -2,7 +2,8 @@ import styled, { css } from 'styled-components';
 
 const StyledAboutme = styled.div`
   /* border: 1px solid red; */
-  margin: 3rem 0rem;
+  /* width: 700px; */
+  margin: 3rem 0rem 5rem 0rem;
   display: flex;
   font-family: ${(props) => props.theme.fonts.regularfont};
   line-height: 150%;
@@ -13,7 +14,7 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
     const alt = props.alt;
     const name: any = {
       profile: `
-      width: 250px;
+      width: 350px;
       margin-right: 2rem;
       border-radius: 5px;
       `,
@@ -36,7 +37,6 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
 `;
 
 const StyledAboutContents = styled.div`
-  width: 300px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -52,13 +52,32 @@ const StyledAboutText = styled.div.attrs<any>(() => ({}))`
   ${(props) => {
     const id = props.id;
     const font: any = {
-      title: `
-      font-size: 24px;
+      aboutme: `
+      font-size: 16px;
+      margin : 15px 0px;
+      color : #808080;
       `,
     };
 
     return css`
       ${font[id]}
+    `;
+  }}
+`;
+
+const StyledAboutBoldText = styled.div.attrs<any>(() => ({}))`
+  ${(props) => {
+    const id = props.id;
+    const font: any = {
+      title: `
+      font-size: 50px;
+      margin-bottom : 15px;
+      `,
+    };
+
+    return css`
+      ${font[id]}
+      font-family: ${(props) => props.theme.fonts.semiboldfont};
     `;
   }}
 `;
@@ -75,4 +94,5 @@ export {
   StyledAboutText,
   StyledAboutAtag,
   StyledAboutRowDiv,
+  StyledAboutBoldText,
 };

@@ -45,6 +45,27 @@ const StyledNavButton = styled.div`
   align-items: center;
   margin: 0rem 1rem;
   cursor: pointer;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: ${(props) => props.theme.colors.main};
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.colors.main};
+  }
 `;
 
 export {

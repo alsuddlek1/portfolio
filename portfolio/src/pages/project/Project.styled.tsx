@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
 
-const StyledProject = styled.div`
+const StyledProject = styled(motion.div)`
   padding-top: 5rem;
   display: flex;
   justify-content: center;

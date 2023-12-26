@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Main from './pages/main';
 import Nav from './components/nav';
 import Project from './pages/project';
-import Footer from './components/fotter';
+import Footer from './components/footer';
 
 function App() {
   return (

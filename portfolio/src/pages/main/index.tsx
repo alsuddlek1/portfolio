@@ -5,7 +5,7 @@ import Hello from './hello';
 
 const Main = () => {
   return (
-    <StyledMain>
+    <StyledMain initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <StyledMainContainer>
         <Hello />
         <Aboutme />
