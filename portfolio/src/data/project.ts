@@ -1,7 +1,7 @@
 export const ProjectData = [
   {
     id: 1,
-    title: 'Next Level',
+    title: '🌎 Next Level',
     date: '23.10.09 - 23.11.17 | 6명',
     skills: ['react', 'typescript', 'zustand', 'styledcomponents'],
     position: ['팀장', '발표', 'FE', '기획'],
@@ -105,7 +105,7 @@ export const ProjectData = [
   },
   {
     id: 5,
-    title: 'Min-Young',
+    title: '❤️ Min-Young',
     date: '23.12.01 - 23.12.15 | 1명',
     skills: ['react', 'typescript', 'styledcomponents'],
     position: ['FE', '기획'],

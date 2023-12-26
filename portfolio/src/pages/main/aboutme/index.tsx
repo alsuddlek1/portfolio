@@ -19,7 +19,7 @@ const Aboutme = () => {
         <StyledAboutBoldText id="title">About Me</StyledAboutBoldText>
         <StyledAboutText id="aboutme">
           커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 프론트엔드 개발자
-          손민영입니다.
+          손민영입니다 🤩
         </StyledAboutText>
         <StyledAboutRowDiv>
           <StyledProfileImg

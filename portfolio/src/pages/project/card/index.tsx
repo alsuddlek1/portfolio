@@ -9,7 +9,6 @@ import {
   StyledCardText,
 } from './Card.styled';
 import Detail from '../detail';
-import { Link } from 'react-router-dom';
 
 const Card = (props: any) => {
   const id = props.id;
