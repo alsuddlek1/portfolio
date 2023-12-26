@@ -23,30 +23,33 @@ export const ProjectData = [
         ],
         preesenter: '발표 자료',
         develper: {
-          title: 'FrontEnd - Developer',
-          main: {
-            contents: {
-              imgsrc: '/charge/contents-main.gif',
-              text: ' 음악, 드라마, 예능 각 컴포넌트 디자인 및 서비스 구현',
-            },
-            learning: {
-              imgsrc: '/charge/learning-main.gif',
-              text: '시나리오 리스트, 결과 컴포넌트, GPT 등',
-            },
-          },
-          senario: {
-            imgsrc: '이미지 링크',
-            text: '상황별 시나리오를 제공하고 녹음, 듣기 기능을 구현하고, 발음에 대한 평가 점수를 제공 하는 기능 구현',
-          },
-          chatbot: {
-            imgsrc: '이미지 링크',
-            text: 'gpt api를 활용하여 한국어 대화 연습',
-          },
-          languge: {
-            imgsrc: '이미지 링크',
-            text: '외국인을 대상으로 한 서비스이므로, 한국 방문객 순을 기반으로 언어 설정, i18next 라이브러리를 사용하여 다국어 지원 ',
+          imgsrc: {
+            contentsmain: '/charge/contents-main.gif',
+            learningmain: '/charge/learning-main.gif',
           },
         },
+        // develper: {
+        //   contentsmain: {
+        //     imgsrc: '/charge/contents-main.gif',
+        //     text: ' 음악, 드라마, 예능 각 컴포넌트 디자인 및 서비스 구현',
+        //   },
+        //   learningmain: {
+        //     imgsrc: '/charge/learning-main.gif',
+        //     text: '시나리오 리스트, 결과 컴포넌트, GPT 등',
+        //   },
+        //   senario: {
+        //     imgsrc: '이미지 링크',
+        //     text: '상황별 시나리오를 제공하고 녹음, 듣기 기능을 구현하고, 발음에 대한 평가 점수를 제공 하는 기능 구현',
+        //   },
+        //   chatbot: {
+        //     imgsrc: '이미지 링크',
+        //     text: 'gpt api를 활용하여 한국어 대화 연습',
+        //   },
+        //   languge: {
+        //     imgsrc: '이미지 링크',
+        //     text: '외국인을 대상으로 한 서비스이므로, 한국 방문객 순을 기반으로 언어 설정, i18next 라이브러리를 사용하여 다국어 지원 ',
+        //   },
+        // },
         designer: '',
       },
       result: [

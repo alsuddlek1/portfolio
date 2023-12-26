@@ -13,6 +13,7 @@ import {
 const Detail = (props: any) => {
   const id = props.id - 1;
   const data = ProjectData[id];
+  const chargedata = data.contents?.charge.develper;
 
   return (
     <StyledDetail onClick={props.closeModal}>
@@ -64,56 +65,9 @@ const Detail = (props: any) => {
           </StyledDetailText>
 
           <StyledDetailText id="category">FE</StyledDetailText>
-          <StyledDetailCategoryGrid id="charge">
-            {/* 메인화면 - 콘텐츠 */}
-            <StyledDetailCharge>
-              <StyledDetailImg
-                src={
-                  process.env.PUBLIC_URL +
-                  data.contents?.charge.develper.main.contents.imgsrc
-                }
-                alt="charge"
-              />
-              <StyledDetailText id="content">
-                {data.contents?.charge.develper.main.contents.text}
-              </StyledDetailText>
-            </StyledDetailCharge>
 
-            {/* 메인화면 - 학습 */}
-            <StyledDetailCharge>
-              <StyledDetailImg
-                src={
-                  process.env.PUBLIC_URL +
-                  data.contents?.charge.develper.main.learning.imgsrc
-                }
-                alt="charge"
-              />
-              <StyledDetailText id="content">
-                {data.contents?.charge.develper.main.learning.text}
-              </StyledDetailText>
-            </StyledDetailCharge>
-
-            {/* 발음평가 */}
-            <StyledDetailCharge>
-              <StyledDetailImg
-                src={
-                  process.env.PUBLIC_URL +
-                  data.contents?.charge.develper.main.learning.imgsrc
-                }
-                alt="charge"
-              />
-              <StyledDetailText id="content">
-                {data.contents?.charge.develper.senario.text}
-              </StyledDetailText>
-            </StyledDetailCharge>
-          </StyledDetailCategoryGrid>
-
-          <StyledDetailText id="content">
-            {data.contents?.charge.develper.chatbot.text}
-          </StyledDetailText>
-          <StyledDetailText id="content">
-            {data.contents?.charge.develper.languge.text}
-          </StyledDetailText>
+          {/* 담당 페이지 정리 */}
+          <StyledDetailCategoryGrid id="charge"></StyledDetailCategoryGrid>
         </StyledDetailLayout>
       </StyledDetailWindow>
     </StyledDetail>
