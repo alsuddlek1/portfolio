@@ -15,8 +15,10 @@ const StyledProfileImg = styled.img.attrs<any>(() => ({}))`
     const name: any = {
       profile: `
       width: 350px;
+      height : 450px;
       margin-right: 2rem;
       border-radius: 5px;
+      object-fit: cover;
       `,
       icon: `
       width:20px;
@@ -44,7 +46,7 @@ const StyledAboutContents = styled.div`
 
 const StyledAboutRowDiv = styled.div`
   display: flex;
-  margin: 5px 0px;
+  margin: 8px 0px;
   font-family: ${(props) => props.theme.fonts.regularfont};
 `;
 
@@ -53,14 +55,18 @@ const StyledAboutText = styled.div.attrs<any>(() => ({}))`
     const id = props.id;
     const font: any = {
       aboutme: `
-      font-size: 16px;
+      
       margin : 15px 0px;
       color : #808080;
+      `,
+      profile: `
+      margin : 10px 0px;
       `,
     };
 
     return css`
       ${font[id]}
+      font-size: 16px;
     `;
   }}
 `;

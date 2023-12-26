@@ -12,7 +12,7 @@ const Aboutme = () => {
   return (
     <StyledAboutme>
       <StyledProfileImg
-        src={process.env.PUBLIC_URL + '/profile.png'}
+        src={process.env.PUBLIC_URL + '/profile.jpg'}
         alt="profile"
       />
       <StyledAboutContents>
@@ -28,13 +28,13 @@ const Aboutme = () => {
           />
           <StyledAboutText>손민영</StyledAboutText>
         </StyledAboutRowDiv>
-        <StyledAboutRowDiv>
+        {/* <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/birthday.png'}
             alt="icon"
           />
           <StyledAboutText>0000.03.11</StyledAboutText>
-        </StyledAboutRowDiv>
+        </StyledAboutRowDiv> */}
         <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/mail.png'}
