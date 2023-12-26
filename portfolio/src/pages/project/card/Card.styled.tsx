@@ -66,7 +66,7 @@ const StyledCardImg = styled.img.attrs<any>(() => ({}))`
       icon: `
       width:20px;
       height:20px;
-      margin: 5px 10px 0px 0px;
+      margin: 15px 5px 0px 0px;
       `,
     };
 
@@ -125,8 +125,12 @@ const StyledCardText = styled.div.attrs<any>(() => ({}))`
 
 const StyledCardRow = styled.div`
   display: flex;
-  /* margin-bottom: 10px; */
+  align-items: flex-end;
   color: white;
+
+  a {
+    color: white;
+  }
 `;
 
 export {

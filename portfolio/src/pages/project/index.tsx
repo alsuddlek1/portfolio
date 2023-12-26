@@ -26,6 +26,7 @@ const Project = () => {
               position={project.position}
               content={project.content}
               imgsrc={project.imgsrc}
+              gitlink={project.gitlink}
             />
           ))}
         </StyledProjectBox>

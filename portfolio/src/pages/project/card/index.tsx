@@ -9,6 +9,7 @@ import {
   StyledCardText,
 } from './Card.styled';
 import Detail from '../detail';
+import { Link } from 'react-router-dom';
 
 const Card = (props: any) => {
   const id = props.id;
@@ -17,6 +18,7 @@ const Card = (props: any) => {
   const skills = props.skills;
   const content = props.content;
   const imgsrc = props.imgsrc;
+  const gitlink = props.gitlink;
 
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const openDetail = () => {
@@ -50,12 +52,12 @@ const Card = (props: any) => {
                 />
               ))}
             </StyledCardRow>
-            <StyledCardRow>
+            <StyledCardRow id="github">
               <StyledCardImg
-                src={process.env.PUBLIC_URL + '/icon/github.png'}
+                src={process.env.PUBLIC_URL + '/icon/githubwhite.png'}
                 alt="icon"
               />
-              GitHub
+              <a href={gitlink}>GitHub</a>
             </StyledCardRow>
           </StyledCard>
         </StyledCardFigcaptionBox>

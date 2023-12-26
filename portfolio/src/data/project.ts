@@ -81,6 +81,7 @@ export const ProjectData = [
     position: ['발표', 'FE', '기획'],
     content: '삼성 라이온즈 파크 방문객들을 위한 서비스',
     imgsrc: '/laon.png',
+    gitlink: 'https://github.com/alsuddlek1/LA-ON',
   },
   {
     id: 3,
@@ -90,6 +91,7 @@ export const ProjectData = [
     position: ['발표', 'FE', '기획'],
     content: '세계 공룡정보와 공룡엑스포 및 고성 관광정보 제공',
     imgsrc: '/whyranosaurs.gif',
+    gitlink: 'https://github.com/alsuddlek1/Yrannosaurus',
   },
   {
     id: 4,
@@ -99,6 +101,7 @@ export const ProjectData = [
     position: ['발표', 'BE', '기획'],
     content: '날씨기반 영화 추천 및 다양한 영화 컨텐츠 제공 웹 서비스',
     imgsrc: '/wwm.png',
+    gitlink: 'https://github.com/alsuddlek1/WWM-Weather-with-Movie-',
   },
   {
     id: 5,
@@ -108,5 +111,7 @@ export const ProjectData = [
     position: ['FE', '기획'],
     content: '포트폴리오 개인 프로젝트',
     imgsrc: '/portfolio.png',
+    gitlink: 'https://github.com/alsuddlek1/portfolio',
+    servicelink: 'https://alsuddlek1.github.io/portfolio',
   },
 ];
