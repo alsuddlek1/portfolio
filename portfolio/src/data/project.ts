@@ -19,19 +19,18 @@ export const ProjectData = [
       imgsrc: '/nextlevel.gif',
       charge: {
         leader: [
-          '데일리 스크럼 회의와 KPT 방식으로 주간회고 진행',
-          '일정 조율을 위한 어쩌구',
+          '데일리 스크럼 회의와 KPT 방식으로 주간회고 진행하였으며 프로젝트 명세서, API 명세서, 프론트 명세서 등 체계화 된 프로젝트를 진행하였습니다.',
         ],
         preesenter: '발표 자료',
         develper: {
           title: 'FrontEnd - Developer',
           main: {
             contents: {
-              imgsrc: '이미지 링크',
+              imgsrc: '/charge/contents-main.gif',
               text: ' 음악, 드라마, 예능 각 컴포넌트 디자인 및 서비스 구현',
             },
             learning: {
-              imgsrc: '이미지 링크',
+              imgsrc: '/charge/learning-main.gif',
               text: '시나리오 리스트, 결과 컴포넌트, GPT 등',
             },
           },

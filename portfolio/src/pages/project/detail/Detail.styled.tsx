@@ -72,6 +72,10 @@ const StyledDetailImg = styled.img.attrs<any>(() => ({}))`
       width : 100%;
       height : auto;
         `,
+      charge: `
+        width : 120px;
+        height : 160px;
+      `,
     };
 
     return css`
@@ -80,9 +84,31 @@ const StyledDetailImg = styled.img.attrs<any>(() => ({}))`
   }}
 `;
 
-const StyledDetailCategoryGrid = styled.div`
-  display: grid;
-  grid-template-columns: 150px 2fr;
+const StyledDetailCategoryGrid = styled.div.attrs<any>(() => ({}))`
+  ${(props) => {
+    const id = props.id;
+    const name: any = {
+      category: `
+      grid-template-columns: 150px 2fr; 
+    `,
+      charge: `
+      color : gray;
+      grid-template-columns: repeat(3, 1fr);
+      `,
+    };
+
+    return css`
+      ${name[id]}
+      font-family: ${(props) => props.theme.fonts.regularfont};
+      display: grid;
+      /* grid-template-columns: 150px 2fr; */
+    `;
+  }}
+`;
+
+const StyledDetailCharge = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export {
@@ -93,4 +119,5 @@ export {
   StyledDetailText,
   StyledDetailImg,
   StyledDetailCategoryGrid,
+  StyledDetailCharge,
 };
