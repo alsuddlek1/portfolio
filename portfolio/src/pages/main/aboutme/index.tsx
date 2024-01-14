@@ -28,13 +28,13 @@ const Aboutme = () => {
           />
           <StyledAboutText>손민영</StyledAboutText>
         </StyledAboutRowDiv>
-        {/* <StyledAboutRowDiv>
+        <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/birthday.png'}
             alt="icon"
           />
-          <StyledAboutText>0000.03.11</StyledAboutText>
-        </StyledAboutRowDiv> */}
+          <StyledAboutText>1999.03.11</StyledAboutText>
+        </StyledAboutRowDiv>
         <StyledAboutRowDiv>
           <StyledProfileImg
             src={process.env.PUBLIC_URL + '/icon/mail.png'}
@@ -47,7 +47,7 @@ const Aboutme = () => {
             src={process.env.PUBLIC_URL + '/icon/school.png'}
             alt="icon"
           />
-          <StyledAboutText>00대학교 수학과 졸업</StyledAboutText>
+          <StyledAboutText>창원대학교 수학과 졸업</StyledAboutText>
         </StyledAboutRowDiv>
         <StyledAboutRowDiv>
           <StyledProfileImg
