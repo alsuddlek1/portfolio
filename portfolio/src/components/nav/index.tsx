@@ -7,6 +7,7 @@ import {
   StyledNavContainer,
   StyledNavName,
 } from './Nav.styeld';
+import { useEffect } from 'react';
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ const Nav = () => {
   const goMain = () => {
     navigate('/portfolio');
   };
+
   return (
     <StyledNav>
       <StyledNavContainer>
