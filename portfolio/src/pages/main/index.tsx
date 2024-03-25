@@ -1,5 +1,9 @@
 import useDeviceSize from '../../hooks/useDeviceSize';
-import { StyledMain, StyledMainContainer } from './Main.styled';
+import {
+  StyledMain,
+  StyledMainContainer,
+  StyledMobileMain,
+} from './Main.styled';
 import Aboutme from './aboutme';
 import Content from './content';
 import Hello from './hello';
@@ -29,14 +33,13 @@ const Main = () => {
         </StyledMain>
       )}
       {isMobile && (
-        <StyledMain initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <StyledMobileMain initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <StyledMainContainer>
-            <Hello />
+            {/* <Hello /> */}
             <Aboutme />
-            모바일
             <Content />
           </StyledMainContainer>
-        </StyledMain>
+        </StyledMobileMain>
       )}
     </>
   );

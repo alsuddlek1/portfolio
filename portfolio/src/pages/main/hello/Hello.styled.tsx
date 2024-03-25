@@ -10,6 +10,16 @@ const StyledHello = styled.div`
   align-items: center;
 `;
 
+const StyledMobileHello = styled.div`
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin: 10px 0px 0px 0px;
+  font-family: ${(props) => props.theme.fonts.semiboldfont};
+  font-size: 16px;
+  align-items: center;
+`;
+
 const typing = keyframes`
     from {width : 0}
   `;
@@ -34,4 +44,4 @@ const TypeAnimation = styled.div.attrs<{ length: number }>(({ length }) => ({
     ${caret} 1s steps(1) infinite;
 `;
 
-export { StyledHello, typing, TypeAnimation };
+export { StyledHello, typing, TypeAnimation, StyledMobileHello };
