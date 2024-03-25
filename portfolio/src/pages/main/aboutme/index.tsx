@@ -12,13 +12,13 @@ const Aboutme = () => {
   return (
     <StyledAboutme>
       <StyledProfileImg
-        src={process.env.PUBLIC_URL + '/profile.jpg'}
+        src={process.env.PUBLIC_URL + '/profile.png'}
         alt="profile"
       />
       <StyledAboutContents>
         <StyledAboutBoldText id="title">About Me</StyledAboutBoldText>
         <StyledAboutText id="aboutme">
-          커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 프론트엔드 개발자
+          커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 개발자
           손민영입니다 🤩
         </StyledAboutText>
         <StyledAboutRowDiv>

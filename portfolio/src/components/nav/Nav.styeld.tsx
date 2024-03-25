@@ -14,7 +14,7 @@ const StyledNavContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0px 8px;
+  padding: 0px 20px;
   height: 5rem;
   max-width: 1200px;
 `;
