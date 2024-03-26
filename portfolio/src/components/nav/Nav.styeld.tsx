@@ -19,8 +19,28 @@ const StyledNavContainer = styled.div`
   max-width: 1200px;
 `;
 
+const StyledMobileNavContainer = styled.div`
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+  height: 56px;
+  max-width: 1200px;
+`;
+
 const StyledNavName = styled.div`
   font-size: 18px;
+  font-family: ${(props) => props.theme.fonts.semiboldfont};
+  display: flex;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+`;
+
+const StyledMobileNavName = styled.div`
+  font-size: 10px;
   font-family: ${(props) => props.theme.fonts.semiboldfont};
   display: flex;
   align-items: center;
@@ -31,6 +51,12 @@ const StyledNavName = styled.div`
 const StyledLogo = styled.img`
   width: 25px;
   margin-right: 10px;
+  cursor: pointer;
+`;
+
+const StyledMobileLogo = styled.img`
+  width: 15px;
+  margin-right: 7px;
   cursor: pointer;
 `;
 
@@ -68,6 +94,36 @@ const StyledNavButton = styled.div`
   }
 `;
 
+const StyledMobileNavButton = styled.div`
+  font-size: 12px;
+  font-family: ${(props) => props.theme.fonts.semiboldfont};
+  display: flex;
+  align-items: center;
+  margin: 0rem 5px;
+  cursor: pointer;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: ${(props) => props.theme.colors.main};
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.colors.main};
+  }
+`;
+
 export {
   StyledNav,
   StyledLogo,
@@ -75,4 +131,8 @@ export {
   StyledNavButton,
   StyledNavContainer,
   StyledNavButtonContainer,
+  StyledMobileNavContainer,
+  StyledMobileNavName,
+  StyledMobileLogo,
+  StyledMobileNavButton,
 };
