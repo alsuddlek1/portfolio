@@ -14,6 +14,12 @@ const StyledProjectContainer = styled.div`
   padding: 0rem 1rem;
 `;
 
+const StyledMobileProjectContainer = styled.div`
+  max-width: 1000px;
+  height: max-content;
+  padding: 0rem 2rem;
+`;
+
 const StyledProjectTitle = styled.div.attrs<any>(() => ({}))`
   ${(props) => {
     const id = props.id;
@@ -40,9 +46,19 @@ const StyledProjectBox = styled.div`
   gap: 1rem;
 `;
 
+const StyledMobileProjectBox = styled.div`
+  /* border: 1px solid green; */
+  margin: 3rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+`;
+
 export {
   StyledProject,
   StyledProjectContainer,
   StyledProjectTitle,
   StyledProjectBox,
+  StyledMobileProjectBox,
+  StyledMobileProjectContainer,
 };

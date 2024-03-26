@@ -11,7 +11,10 @@ const StyledCard = styled.div.attrs<any>(() => ({}))`
       card: `
       border-radius: 5px;
       overflow: hidden;
-      width: 400px;
+      max-width : 400px;
+      // width: 400px;
+      width : 100%;
+      max-height : 225px;
       height : 225px;
       border-radius: 5px;
       border: 3px solid gray;
@@ -50,7 +53,8 @@ const StyledCardFigcaptionBox = styled.div`
   border: 3px solid white;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  overflow-y: scroll;
   border-radius: 5px;
 `;
 
@@ -61,7 +65,7 @@ const StyledCardImg = styled.img.attrs<any>(() => ({}))`
       main: `
       width : 100%;
       height : 100%;
-      object-fit : cover;
+      object-fit : fit;
       `,
       icon: `
       width:20px;
