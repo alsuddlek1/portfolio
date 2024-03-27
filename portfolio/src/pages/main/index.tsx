@@ -17,7 +17,6 @@ const Main = () => {
           <StyledMainContainer>
             <Hello />
             <Aboutme />
-            데스크탑
             <Content />
           </StyledMainContainer>
         </StyledMain>
