@@ -75,6 +75,8 @@ const Content = () => {
               📃 Certificate
             </StyledContentBoldText>
             <StyledContentContainer id="certificate">
+              <StyledContentBoldText>2024.03</StyledContentBoldText>
+              <StyledText id="content">SQLD</StyledText>
               <StyledContentBoldText>2022.12</StyledContentBoldText>
               <StyledText id="content">컴퓨터활용능력(2급)</StyledText>
             </StyledContentContainer>
@@ -155,6 +157,10 @@ const Content = () => {
                 📃 Certificate
               </StyledContentBoldText>
               <StyledMobileContentContainer id="certificate">
+                <StyledContentBoldText id="mobile">
+                  2024.03
+                </StyledContentBoldText>
+                <StyledText id="mobilecontent">SQLD</StyledText>
                 <StyledContentBoldText id="mobile">
                   2022.12
                 </StyledContentBoldText>
